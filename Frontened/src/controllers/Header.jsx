@@ -2,10 +2,10 @@ import DarkOverlay from "./DarkOverlay";
 import Login from "./Login";
 import Navbar from "./Navbar";
 
-function Home() {
+function Header() {
 	return (
 		<>
-			<div className="relative min-h-screen w-full">
+			<div className="relative w-full">
 				<div
 					className=" relative opacity-90 bg-dark h-screen w-screen flex justify-between bg-cover bg-center"
 					style={{
@@ -14,26 +14,21 @@ function Home() {
 				>
 					<DarkOverlay />
 					<div>
-					<Navbar />
-					
-					
-					
+						<Navbar />
 					</div>
-					
-				
 
-					
-
-					<div className="flex gap-6 mx-auto md:flex justify-center items-center">
+					<div className="flex flex-col gap-6 mx-auto md:flex-row justify-center items-center">
 						<div>
-						<img src="/assets/images/bglogo.jpg" alt="" height={860} width={860} />
+							<img
+								src="/assets/images/bglogo.jpg"
+								alt=""
+								className="h-[220px] w-[320px] md:h-[560px] md:w-[860px]"
+							/>
 						</div>
-						
-							<Login/>
-						
-						
-						
-					
+						<div className="z-40 mx-auto">
+						<Login />
+						</div>
+							
 						
 					</div>
 
@@ -54,4 +49,4 @@ function Home() {
 	);
 }
 
-export default Home;
+export default Header;
