@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .top{
+            display: block;
+            
+            margin: auto;
+            width: 450px;
+            border: 2px solid black;
+            color: greenyellow;
+            background-color: cornflowerblue;
+        }
+        
+        ul{
+            display: block;
+        }
+        .navbar li{
+            
+             display: inline; 
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 25px;
+            
+        }
+        .navbar li:hover{
+            color: black;
+            cursor: pointer;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+        <header class="top">
+            
+             <nav class="navbar">
+                <ul >
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Section</li>
+                    <li>Contact Us</li>
+                </ul>
+             </nav>                                                                   
+        </header>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.conta, initial-scale=1.0">
+    <title>Position in CSS and FlexBox</title>
+    <style>
+        /* Position in CSS 
+        absolute - Move relative to its first parent 
+        relative - Move relative to its normal positon
+        fixed - Position relative to the browser window.
+        sticky - Position relative to the browser window.
+        z-index = is only when the position is given i.e absolute,relative ,fixed and sticky
+        visibility mode is hidden will not display the element but reserve the space for  it and display will remove the space too.
+        flex direction where we can implement the direction that is row reverse or column reverse.
+        Althougth in flex flow we can write both the things the flex direction an flex wrap
+        */
+        .container
+        {
+            display: flex;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        button tag,anchor tag which is used to implement the button and the achor tag is used to implement the line under the 
+        We will talk about flex itenms in which we we provide the order to each and every box.Higher will be the order later it will 
+        shown on the screen.
+     -->
+    <div class="container">
+        <div id="fruits" class="items">
+            <p id="fruitspara" class="para"> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Exercitationem dolor et repellendus nam, saepe adipisci nobis
+                quaerat nostrum ab debitis odio corporis aut.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

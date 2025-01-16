@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card
+        {
+            margin: 0px 12px;
+            padding: 23px 12px;
+            border: 2px solid red;
+            background-color: burlywood;
+            /* box - shadow : offset-x offset-y blur-radius sptread-radius color;
+            Alpha in (rgba) will take the responsibity of darakness of colors. */
+            box-shadow: 10px 13px 10px green;
+            /* to make the shadow inside the box we can use the property of inset
+            box-shadow : inset offset-x offset-y color; */
+            /* We can also gibve multiple shadows to the box shadow separated by comma. */
+            /* This is Text shadow Below is the code. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1"><h3>Card-1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Hic facilis ullam consequuntur reprehenderit, sed non consectetur earum molestias iure omnis veritatis.
+              Ratione, temporibus fuga.</p>
+        </div>
+        <div class="card" id="car-2"><h3>Card-2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem earum suscipit quis harum sequi obcaecati quas ex adipisci,
+                 voluptatibus rem maxime laborum neque nam nesciunt ullam alias laudantium reiciendis odio?</p>
+     
+      
+    </div>
+</body>
+</html>
